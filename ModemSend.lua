@@ -5,7 +5,7 @@ message = io.read();
 if (peripheral.wrap("left") == nil) then
   modem = back;
 else
-  modem = modem = peripheral.wrap("left");
+  modem = peripheral.wrap("left");
 end
 modem.open(port);
 model.closeAll();
