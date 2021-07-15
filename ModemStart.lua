@@ -1,7 +1,11 @@
 term.clear()
 print("What channel do you want to recieve?")
 port = tonumber(io.read())
-modem = peripheral.wrap("left")
+if peripheral.wrap("left")~=nil then
+  modem = peripheral.wrap("left")
+else
+  modem = peripheral.wrap("back")
+end
 modem.open(port)
 
 while true do
@@ -9,3 +13,4 @@ while true do
   print("Message recieved on channel "..senderChannel)
   print(message)
 end
+--Credit to BasicCorruption for modem detect script
