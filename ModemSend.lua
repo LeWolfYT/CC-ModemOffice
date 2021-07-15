@@ -8,6 +8,6 @@ else
   modem = peripheral.wrap("back")
 end
 modem.open(port);
-model.closeAll();
+modem.closeAll();
 modem.transmit(port, 1, message);
 term.clear();
