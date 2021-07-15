@@ -2,7 +2,7 @@ print("Channel:");
 port = tonumber(io.read());
 print("message:");
 message = io.read();
-if (peripheral.wrap("left") == nil)
+if (peripheral.wrap("left") == nil) then
   modem = back;
 else
   modem = modem = peripheral.wrap("left");
