@@ -1,7 +1,7 @@
 print("What channel will this message go to?");
-port = tonumber(io.read());
+port = tonumber(read());
 print("Please type a message");
-message = io.read();
+message = read();
 modem = peripheral.find("modem")
 modem.open(port);
 modem.closeAll();
