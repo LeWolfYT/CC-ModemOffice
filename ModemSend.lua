@@ -1,3 +1,4 @@
+print("ModemOffice v1.1")
 print("What channel will this message go to?");
 port = tonumber(read());
 print("Please type a message");
