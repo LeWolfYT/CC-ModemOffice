@@ -6,5 +6,5 @@ message = read();
 modem = peripheral.find("modem")
 modem.open(port);
 modem.closeAll();
-modem.transmit(port, 1, message);
+modem.transmit(port, 1, "<" .. os.getComputerLabel() .. ">" .. message);
 term.clear();
