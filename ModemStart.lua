@@ -1,4 +1,5 @@
 term.clear()
+term.setCursorPos(1,1)
 print("ModemOffice v1.1")
 print("What channel do you want to recieve?")
 port = tonumber(io.read())
