@@ -1,9 +1,7 @@
 term.clear()
 print("What channel do you want to recieve?")
 port = tonumber(io.read())
-print("What ID is your modem?")
-id = io.read()
-modem = peripheral.wrap(id)
+modem = peripheral.find("modem")
 modem.open(port)
 
 while true do
