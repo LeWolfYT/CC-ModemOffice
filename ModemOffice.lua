@@ -4,8 +4,9 @@ term.setCursorPos(1,1)
 local toptext = "ModemOffice v1.2"
 term.blit(toptext,(string.rep("f",#toptext)),(string.rep("9",#toptext)))
 term.setCursorPos(1,2)
-term.blit("Receiving channel: ",(string.rep("f",#toptext)),(string.rep("b",#toptext)))
-term.setCursorPos(19,2)
+local channeltext = "Receiving channel: "
+term.blit(channeltext,(string.rep("f",#channeltext)),(string.rep("b",#channeltext)))
+term.setCursorPos(#channeltext,2)
 local sendport = read()
 local winone = window.create(term.current(),1,3,w,(math.floor(h/2) - 1))
 local wintwo = window.create(term.current(),1,(math.ceil(h/2) + 2),w,(math.ceil(h/2) - 2))
